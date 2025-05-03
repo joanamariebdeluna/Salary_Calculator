@@ -5,4 +5,4 @@ Calculate the Tax
 Calculate deductions
 Calculate the netPay
 
-includes unit tests for accuracy, and uses GitHub Actions for automated testing.
+that includes unit tests for accuracy, and uses GitHub Actions for automated testing.
