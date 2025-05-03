@@ -3,7 +3,8 @@ from Salary_calculator import Salary_calculator
 
 from Salary_calculator import (
     Totalpay_calculator,
-    Tax_calculator
+    Tax_calculator,
+    Deduction_calculator,
 )
 
 def Totalpay_calculator_test():
@@ -13,4 +14,8 @@ def Totalpay_calculator_test():
 def Tax_calculator():
     assert Tax_calculator(600, 0.2) == 120
     Tax_calculator(600, 1.2)
+    
+def Deduction_calculation():
+    assert Deduction_calculation(600, 0.1) == 60
+    Deduction_calculation(600, -0.1)
     
