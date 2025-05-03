@@ -1,4 +1,4 @@
-name: ATM Unit Tests CI  # Optional workflow name
+name: Salary_calculator Test CI  # Optional workflow name
 
 on: [push, pull_request]
 
