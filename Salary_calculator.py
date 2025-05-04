@@ -15,5 +15,5 @@ class Salary_calculator:
         return self.gross_pay * self.deduction_rate
 
     def Netpay_calculator(self):
-        return self.gross_pay - self.calculate_tax() - self.calculate_deductions()
+        return self.gross_pay - self.Tax_calculator() - self.Deduction_calculator()
     
