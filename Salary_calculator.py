@@ -1,13 +1,19 @@
+    
+class Salary_calculator:
+    def __init__(self, gross_pay, tax_rate, deduction_rate):
+        self.gross_pay = gross_pay
+        self.tax_rate = tax_rate
+        self.deduction_rate = deduction_rate
 
-def Totalpay_calculator(hourly_rate, hours_worked):
-    if hourly_rate < 0 or hours_worked < 0:
-        return hourly_rate * hours_worked
+    def Totalpay_calculator(self):
+        return self.gross_pay
 
-def Tax_calculator(total_pay, tax_rate):
-    if tax_rate < 0 or tax_rate > 1:
-        return total_pay * tax_rate
-      
-def Deduction_calculator(total_pay, deduction_rate):
-    if deduction_rate < 0 or deduction_rate > 1:
-        return total_pay * deduction_rate
+    def Tax_calculator(self):
+        return self.gross_pay * self.tax_rate
+
+    def Deduction_calculator(self):
+        return self.gross_pay * self.deduction_rate
+
+    def Netpay_calculator(self):
+        return self.gross_pay - self.calculate_tax() - self.calculate_deductions()
     
